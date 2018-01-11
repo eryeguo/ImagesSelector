@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    >
+
+
+    <android.support.v7.widget.CardView
+
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="#edeaea"
+        app:cardCornerRadius="10dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardElevation="10dp"
+        android:layout_gravity="center_vertical"
+        app:cardUseCompatPadding="true"
+        android:id="@+id/cardView"
+        app:cardBackgroundColor="#ffffff"
+        >
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sou_imga"
+            fresco:actualImageScaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            fresco:progressBarImageScaleType="centerInside"
+            />
+
+    </android.support.v7.widget.CardView>
+
+
+
+ <LinearLayout
+
+     android:layout_width="200dp"
+     android:layout_height="match_parent"
+     android:orientation="vertical"
+     android:layout_alignParentTop="true"
+     android:layout_toEndOf="@+id/cardView">
+
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:id="@+id/sou_daoyan"
+         android:layout_marginTop="5dp"
+         android:textColor="#c8c8c8"
+         />
+
+
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:id="@+id/sou_zhuytan"
+         android:layout_marginTop="5dp"
+         android:textColor="#c8c8c8"
+         />
+
+
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:id="@+id/sou_jianjie"
+         android:layout_marginTop="5dp"
+         android:textColor="#c8c8c8"
+         />
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="展开"
+         android:id="@+id/sou_zhankai"
+
+         />
+
+
+ </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginRight="4dp"
+
+        android:background="#f33213">
+
+        <ImageView
+            android:id="@+id/iv_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/touxian"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="左滑删除"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </FrameLayout>
+</LinearLayout>

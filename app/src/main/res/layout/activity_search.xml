@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        android:background="#fff"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    tools:context="pingan.com.my_weiying_app.search.SearchActivity">
+        <!--搜索的条目-->
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:id="@+id/ll_top"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="65px">
+            <LinearLayout
+                android:padding="5dp"
+                android:layout_marginLeft="30px"
+
+
+                android:layout_width="600px"
+                android:gravity="center_vertical"
+                android:layout_height="30dp">
+                <ImageView
+                    android:id="@+id/sel_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/fancy"
+                    />
+                <EditText
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:background="@null"
+                    android:layout_width="0dp"
+                    android:textSize="12sp"
+                    android:layout_height="wrap_content"
+                   android:hint="羞羞的铁拳"
+                    android:id="@+id/ed_sousuo"
+                    />
+
+            </LinearLayout>
+            <TextView
+                android:textColor="#000"
+                android:text="搜索"
+                android:id="@+id/te_sousuo"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10px"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!--滚动监听-->
+        <ScrollView
+            android:layout_below="@id/ll_top"
+            android:id="@+id/sel_slv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_below="@id/sel_slv"
+                android:id="@+id/ll_foure"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+                <TextView
+
+                    android:id="@+id/tv_jianyi"
+                    android:background="#FFCCC8C8"
+                    android:text="历史记录"
+                    android:padding="15px"
+                    android:layout_width="match_parent"
+                    android:layout_height="60px" />
+                <!--<android.support.v7.widget.RecyclerView-->
+                    <!--android:layout_below="@+id/tv_jianyi"-->
+                    <!--android:id="@+id/recy1"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="100px">-->
+
+                <!--</android.support.v7.widget.RecyclerView>-->
+
+                <pingan.com.my_weiying_app.search.XCFlowLayout
+                    android:layout_below="@+id/tv_jianyi"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:id="@+id/flowlayout"
+                    ></pingan.com.my_weiying_app.search.XCFlowLayout>
+
+                <!--手机的通讯录-->
+                <LinearLayout
+                    android:layout_marginTop="15px"
+                    android:background="#fff"
+                    android:layout_below="@id/flowlayout"
+                    android:orientation="horizontal"
+                    android:id="@+id/ll_san"
+                    android:layout_width="match_parent"
+                    android:layout_height="60px">
+                    <ImageView
+                        android:layout_marginLeft="10px"
+                        android:layout_gravity="center"
+                        android:background="@drawable/collection_select"
+                        android:layout_width="60px"
+                        android:layout_height="60px" />
+
+                    <TextView
+                        android:text="看看谁也在搜索  >"
+                        android:layout_marginLeft="320px"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recy2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                     >
+
+                </android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+

@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:leon="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pingan.com.my_weiying_app.MainActivity">
+
+
+    <pingan.com.my_weiying_app.ResideLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_blue"
+            android:orientation="vertical"
+            >
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/my_image_view"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                fresco:roundAsCircle="true"
+                />
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="微影，微一下"
+                />
+
+            <!--<com.leon.lib.settingview.LSettingItem-->
+
+                <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+                <!--android:id="@+id/item_one"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--leon:leftIcon="@drawable/shoucan"-->
+                <!--leon:leftText="我的收藏"/>-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/item_one"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                >
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/shoucan"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的收藏"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="7dp"
+                    android:textSize="17dp"
+                    />
+
+            </LinearLayout>
+
+
+            <!--<com.leon.lib.settingview.LSettingItem-->
+            <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+            <!--android:id="@+id/item_tow"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--leon:leftIcon="@drawable/xiazai"-->
+            <!--leon:leftText="我的下载"/>-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/item_tow"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                >
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/xiazai"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的下载"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="7dp"
+                    android:textSize="17dp"
+                    />
+
+            </LinearLayout>
+
+            <!--<com.leon.lib.settingview.LSettingItem-->
+                <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+                <!--android:id="@+id/item_threen"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--leon:leftIcon="@drawable/fuli"-->
+                <!--leon:leftText="福利"/>-->
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/item_three"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                >
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/fuli"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="福利"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="7dp"
+                    android:textSize="17dp"
+                    />
+
+            </LinearLayout>
+            <!--<com.leon.lib.settingview.LSettingItem-->
+                <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+                <!--android:id="@+id/item_a"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--leon:leftIcon="@drawable/fenxiang"-->
+                <!--leon:leftText="分享"/>-->
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/item_a"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                >
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/fenxiang"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="分享"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="7dp"
+                    android:textSize="17dp"
+                    />
+
+            </LinearLayout>
+            <!--<com.leon.lib.settingview.LSettingItem-->
+                <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+                <!--android:id="@+id/item_b"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--leon:leftIcon="@drawable/app"-->
+                <!--leon:leftText="建议反馈"/>-->
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/item_b"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                >
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/app"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="建议反馈"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="7dp"
+                    android:textSize="17dp"
+                    />
+
+            </LinearLayout>
+            <!--<com.leon.lib.settingview.LSettingItem-->
+                <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+                <!--android:id="@+id/item_c"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--leon:leftIcon="@drawable/version"-->
+                <!--leon:leftText="设置"/>-->
+            <LinearLayout
+                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/item_c"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                >
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/version"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="设置"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="7dp"
+                    android:textSize="17dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/item_q"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="300dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/item_w"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/my" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginTop="4dp"
+                        android:text="关于"
+                        android:textSize="17dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/item_e"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/my_collection" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginTop="4dp"
+                        android:text="主题"
+                        android:textSize="17dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+        <com.hjm.bottomtabbar.BottomTabBar
+        android:id="@+id/bottom_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true">
+        </com.hjm.bottomtabbar.BottomTabBar>
+    </pingan.com.my_weiying_app.ResideLayout>
+
+
+</RelativeLayout>
